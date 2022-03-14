@@ -1,0 +1,22 @@
+
+#Jasypt free conversion tool : https://www.devglan.com/online-tools/jasypt-online-encryption-decryption#/google_vignette
+
+jasypt:
+  encryptor:
+    algorithm: PBEWithMD5AndDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
+    password: ${JASYPT_PASSWORD}
+
+spring:
+  datasource:
+    url: ENC(EpU9eq7yj5xQ6Tpfryjh4a+WFcYjn9H2XiLHS8bN0mWEoRMbChYGI5BB62gCW/te)
+    username: ENC(DmLYYbaWEyWdVwWfpa1qDA==)
+    password: ENC(y+bHD5PHugk1ZbNfIqwHrQ==)
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none

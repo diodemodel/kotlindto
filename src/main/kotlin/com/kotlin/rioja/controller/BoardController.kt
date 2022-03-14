@@ -19,6 +19,7 @@ class BoardController {
     fun getBoardList(@ModelAttribute request: BoardSearchRequest): BoardDto {
         request.boardIdx = 2
         val boardDto:BoardDto =  boardService.searchUserInfo(request)
+        println(boardDto.title)
         return boardDto
     }
 }

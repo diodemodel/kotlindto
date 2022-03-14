@@ -8,15 +8,15 @@ import javax.persistence.Id
 
 @Data
 class BoardDto {
-    private var boardIdx: Long = 0
-    private var title: String? = null
-    private var contents: String? = null
-    private var hitCnt: Int = 0
-    private var createdDatetime: LocalDateTime? = null
-    private var creatorId: String? = null
-    private var updatedDatetime: LocalDateTime? = null
-    private var updaterId: String? = null
-    private var deletedYn: String? = null
+    var boardIdx: Long = 0
+    var title: String? = null
+    var contents: String? = null
+    var hitCnt: Int = 0
+    var createdDatetime: LocalDateTime? = null
+    var creatorId: String? = null
+    var updatedDatetime: LocalDateTime? = null
+    var updaterId: String? = null
+    var deletedYn: String? = null
 
 
     public fun convertEntityToDto(boardModel: BoardModel) {
